@@ -22,9 +22,6 @@ job('Maven-project-dsl'){
         archiveJunit('**/target/surefire-reports/*.xml'){
             allowEmptyResults()
             healthScaleFactor(1)
-            testDataPublishers {
-                publishTestStabilityData()
-            }
         }
     }
 }

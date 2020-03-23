@@ -1,6 +1,8 @@
 job('remote-connection-dsl'){
-    discardOldBuilds{
-        numToKeep(3)
+    publishers {
+        publishBuild {
+            discardOldBuilds(-1, 3)
+        }
     }
     steps{
         remoteShell('remote_user@remote _host:22'){

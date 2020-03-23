@@ -1,7 +1,9 @@
 job('remote-connection-dsl'){
-    discardOldBuilds(-1, 3)
+    discardOldBuilds{
+        numToKeep(3)
+    }
     steps{
-        remoteShell('remote_user@remote_host:22'){
+        remoteShell('remote_user@remote _host:22'){
             command('USER=$(whoami)', 'echo "This is $USER from $hostname"')
         }
     }

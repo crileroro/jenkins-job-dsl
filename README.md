@@ -11,4 +11,4 @@ This project explains how to use the DSL plugin along with a seed job.
 ***
 In case your Jenkins job fails due to the error `ERROR: script not yet approved for use`, as admin user, you will need to approve your Groovy script. Go to Manage Jenkins -> In-process Script Approval. This is a Jenkins Security feature.
 ***
-See [this link](https://github.com/jenkinsci/job-dsl-plugin/wiki/Script-Securityon) on how to use a Groovy sandbox for the DSL plugin.
+See [this link](https://github.com/jenkinsci/job-dsl-plugin/wiki/Script-Securityon) and [this](https://github.com/jenkinsci/job-dsl-plugin/wiki/Script-Security) on how to use a Groovy sandbox for the DSL plugin.
